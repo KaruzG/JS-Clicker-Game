@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+    font-family: 'Cute Font', cursive;
+    font-size: 20px;
+    background-color: #FFFFC2;
+}
+
+p {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+/* -----------------------HEADER---------------------- */
+ol.header {
+    text-align: center;
+    background-color: #F5A9CB;
+    margin: 0%;
+    text-shadow: 1px 1px 2px black;
+    font-size: 25px;
+}
+
+ol.header li  {
+    display: inline-block;
+    margin: 0;
+    height: 40px;
+    width: 25%;
+}
+ol.header p  {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+ol.header li:hover {
+    background-color: #fb98c5;
+    transition: 0.2s ease-in-out;
+}
+/* --------------------------------------------------- */
+
+
+
+/* -----------------------MAIN---------------------- */
+#clickMe {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+/* ------------------------------------------------- */
+
+
+/* -----------------------MAIN---------------------- */
+/* ------------------------------------------------- */

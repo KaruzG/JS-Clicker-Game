@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Clicker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ol class="header">
+            <li><p onclick=mejoraClick()>Mejora Click</p></li>
+            <li><p onclick=pasiveClicks()>Mejora Pasiva</p></li>
+            <li><p onclick=reset()>Reset</p></li>
+        </ol>
+    </header>
+    <main>
+        <div id="clickMe" onclick=clickMeClicked()>
+        </div>
+        <p>Clicks: <label id="clickCounter">0</label> </p>
+    </main>
+    <script src="/html/JS/index.js"></script>
+</body>
+</html>
