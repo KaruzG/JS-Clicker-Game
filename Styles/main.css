@@ -1,0 +1,115 @@
+body {
+    margin: 0px;
+    font-family: 'Cute Font', cursive;
+    font-size: 20px;
+    background-image: url("../img/background.png");
+}
+
+p {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* -----------------------HEADER---------------------- */
+ol.header {
+    text-align: center;
+    background-color: #F5A9CB;
+    margin: 0%;
+    text-shadow: 1px 1px 2px black;
+    font-size: 25px;
+}
+
+ol.header li  {
+    display: inline-block;
+    margin: 0;
+    height: 40px;
+    width: 25%;
+}
+ol.header p  {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+ol.header li:hover {
+    background-color: #fb98c5;
+    transition: 0.2s ease-in-out;
+}
+/* --------------------------------------------------- */
+
+
+
+/* -----------------------MAIN---------------------- */
+#clicksContainer {
+    background-color: #F5A9CB;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: fit-content;
+    border-top: 2px #fb98c5;
+    -webkit-border-radius: 0px 0px 25px 0px;
+    border-radius: 0px 0px 25px 0px;
+    padding: 1px 22px 3px 30px;
+    font-weight: bold;
+    
+}
+
+#clickCounter {
+    background-color: #f58cbb;
+    padding: 1px 10px;
+    border-radius: 5px;
+}
+
+#allButHeader {
+    height: 86vh;
+    width: 100%;
+}
+
+#clickMe {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#unclickedImg {
+    max-height: 200px;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* ------------------------------------------------- */
+
+
+/* ----------------------FOOTER--------------------- */
+footer {
+    background-color: #F5A9CB;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+    width: 100%;
+    border-top: 2px solid #ee87b5;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #b24f7b;
+}
+
+footer a {
+    text-decoration: none;
+    color: #8f3f63;
+    font-weight: bold;
+}
+/* ------------------------------------------------- */
