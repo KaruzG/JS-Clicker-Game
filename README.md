@@ -1,1 +1,1 @@
-# WIP-Game
+# JS-Clicker-Game
