@@ -19,10 +19,14 @@
         </ol>
     </header>
     <main>
-        <div id="clickMe" onclick=clickMeClicked()>
-        </div>
-        <p>Clicks: <label id="clickCounter">0</label> </p>
+        <p id="clicksContainer">Clicks: <label id="clickCounter">0</label> </p>
+        <div id="allButHeader">
+            <img src="img/cursor1.png" id="unclickedImg" onclick=clickMeClicked() alt="">
+        </div> 
     </main>
+    <footer id="footer">
+        <p>Made by <a href="https://github.com/KaruzG">@KaruzG</a></p>
+    </footer>
     <script src="/html/JS/index.js"></script>
 </body>
 </html>
