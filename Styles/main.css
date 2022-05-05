@@ -22,7 +22,7 @@ ol.header {
 ol.header li  {
     display: inline-block;
     margin: 0;
-    height: 40px;
+    height: fit-content;
     width: 25%;
 }
 ol.header p  {
@@ -39,9 +39,27 @@ ol.header p  {
     -ms-user-select: none;
 }
 
-ol.header li:hover {
+/* Te quedas intentando poner el reset bien
+
+ol.header li.upgradeButton:hover p {
     background-color: #fb98c5;
     transition: 0.2s ease-in-out;
+}
+
+#resetButton {
+    top: 0;
+    bottom: 100px;
+}
+
+#resetButton:hover {
+    background-color: #fb98c5;
+    transition: 0.2s ease-in-out;
+}
+
+.prices {
+    display: flex;
+    max-height: 20px;
+    font-size: 15px;
 }
 /* --------------------------------------------------- */
 

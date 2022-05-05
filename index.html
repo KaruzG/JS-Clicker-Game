@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="Styles/main.css">
     <title>Clicker</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
-    <script src="/html/JS/index.js"></script>
-    <script src="/html/JS/cache.js"></script>
 </head>
 <body>
     <header>
         <ol class="header">
-            <li><p onclick=mejoraClick()>Mejora Click</p></li>
-            <li><p onclick=pasiveClicks()>Mejora Pasiva</p></li>
-            <li><p onclick=reset()>Reset</p></li>
+            <li class="upgradeButton" onclick=mejoraClick()>
+                <p>Upgrade Click</p>
+                <p class="prices"><label id="pricePower"></label>$</p>
+            </li>
+            <li class="upgradeButton" onclick=pasiveClicks()>
+                <p>Upgrade AutoClick</p>
+                <p class="prices"><label id="pricePower"></label>$</p>
+            </li>
+            <li id="resetButton">
+                <p onclick=reset()>Reset</p>
+            </li>
         </ol>
     </header>
     <main>
@@ -31,5 +37,6 @@
     <footer id="footer">
         <p>Made by <a href="https://github.com/KaruzG">@KaruzG</a></p>
     </footer>
+    <script src="JS/index.js"></script>
 </body>
 </html>

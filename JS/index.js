@@ -9,9 +9,26 @@ let clickPower = 1; // When button clicked, how many clicks added to score
 let score = 0;
 let clicksPasivos = 0; // Clicks per second added
 let img = document.getElementById("unclickedImg"); // The "button"
-// ---------------------------- ------------ -------------------------------------
+// -------------------------------------------------------------------------------
 
-document.getElementById('unclickedImg').setAttribute('draggable', false);
+img.setAttribute('draggable', false);
+
+// --------------------------------- cache ----------------------------------------
+if (localStorage.getItem("score")){                                  // Loads cache
+    score = parseInt(localStorage.getItem("score"));
+    clickPower = parseInt(localStorage.getItem("clickPower"));
+    clicksPasivos = parseInt(localStorage.getItem("clicksPasivos"));
+    clickCounter.innerHTML = score;
+} else {
+    score = 0;
+}
+
+setInterval (function cache() {                             // Saves stats every 3s
+    localStorage.setItem("score", score);
+    localStorage.setItem("clickPower", clickPower);
+    localStorage.setItem("clicksPasivos", clicksPasivos);
+}, 3000);
+// --------------------------------------------------------------------------------
 
 function clicked() {
     clickMeClicked();
@@ -20,9 +37,7 @@ function clicked() {
 
 function clickMeClicked() {
     score = score + clickPower;
-
     return clickCounter.innerHTML = score;
-
 }
 
 function changeImg() {
@@ -34,14 +49,19 @@ function changeImg2() {
     img.src="JS/../img/cursor1.png";
 }
 
+// ---------------------------- header menu -------------------------------------
+  
+    // ---------------------------- pasive Clicks -------------------------------
 function pasiveClicks() {
     clicksPasivos = clicksPasivos + 1;
 }
-
+   
+    // ---------------------------- click Power ---------------------------------
 function mejoraClick() {
     return clickPower++;
 }
 
+    // ---------------------------- reset ---------------------------------------
 function reset() {
     score = 0;
     clickCounter.innerHTML = score;
@@ -50,6 +70,7 @@ function reset() {
     localStorage.setItem("clicksCache", 0);
 
 }  
+// ------------------------------------------------------------------------------
 
 setInterval (function() {
     score = score + clicksPasivos;
