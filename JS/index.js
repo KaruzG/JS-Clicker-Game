@@ -52,10 +52,14 @@ function changeImg2() {
 // ---------------------------- header menu -------------------------------------
   
     // ---------------------------- pasive Clicks -------------------------------
+var pasiveClicksPrice = 100;
+document.getElementById("pricePasive").innerHTML = pasiveClicksPrice;
 function pasiveClicks() {
     clicksPasivos = clicksPasivos + 1;
+    var score = score - pasiveClicksPrice;
+    var pasiveClicksPrice = pasiveClicksPrice*1.2;
 }
-   
+  
     // ---------------------------- click Power ---------------------------------
 function mejoraClick() {
     return clickPower++;
