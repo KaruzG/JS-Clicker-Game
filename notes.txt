@@ -1,0 +1,3 @@
+· Añade el precio y lo nuevo a cache y a carga de cache
+· Global JS (img y img.drag,)
+· 
