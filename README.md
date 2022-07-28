@@ -1,5 +1,5 @@
 # JS Clicker Game
-This is just a small project of making a web clicker game just with JavaScript.
+This is just a small project of making a web clicker game with JavaScript.
 
 # CHECK LIST 
 - [x] Click Button
